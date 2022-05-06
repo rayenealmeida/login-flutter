@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   get: ^3.4.4
   get_storage:
+  splashscreen: ^1.2.0
   #cloud_firestore: ^0.13.7
   #google_sign_in: ^4.5.1
   #firebase_storage: ^3.1.6
