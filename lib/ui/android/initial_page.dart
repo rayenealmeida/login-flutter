@@ -10,6 +10,11 @@ class InitialPage extends StatelessWidget {
     body: Stack(
       children: [
         SplashScreen(
+          seconds: 5,
+          gradientBackground: LinearGradient(
+            begin: ,
+            colors: ,
+            ),
 
         ),
       ],
