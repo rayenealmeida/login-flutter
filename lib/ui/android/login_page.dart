@@ -44,6 +44,23 @@ class LoginPage extends StatelessWidget {
                 )
               ),
             ),
+            SizedBox(height: 24.0,),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 16.0),
+              child: RaisedButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24.0),
+                ),
+                onPressed: () { },
+                padding: EdgeInsets.all(12.0),
+                color: Get.theme.primaryColor,
+                child: Text("Acessar", style: TextStyle(color: Colors.white),),
+              ),
+            ),
+              FlatButton(
+                onPressed: () { },
+                child: Text("Esqueceu a senha?", style: TextStyle(color: Colors.black54),),
+              ),
           ],
         )
       )
