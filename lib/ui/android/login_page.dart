@@ -30,7 +30,20 @@ class LoginPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(32.0), 
                 )
               ),
-            )
+            ),
+            SizedBox(height: 8.0),
+            TextFormField(
+                autofocus: false,
+                //initialValue: "password",
+                obscureText: true,
+                decoration: InputDecoration(
+                  hintText: "Senha",
+                  contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(32.0),
+                )
+              ),
+            ),
           ],
         )
       )
