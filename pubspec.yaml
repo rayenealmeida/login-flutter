@@ -36,10 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   get: ^3.4.4
   get_storage:
-  cloud_firestore: ^0.13.7
-  google_sign_in: ^4.5.1
-  firebase_storage: ^3.1.6
-  firebase_auth: ^0.16.1
+  #cloud_firestore: ^0.13.7
+  #google_sign_in: ^4.5.1
+  #firebase_storage: ^3.1.6
+  #firebase_auth: ^0.16.1
 
 
 dev_dependencies:
