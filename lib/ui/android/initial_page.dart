@@ -7,8 +7,7 @@ class InitialPage extends StatelessWidget {
     return Scaffold(
     appBar: AppBar(title: Text('InitialPage')),
     body: Container(
-      child: Container(),
-    
+      child: Text("INITIAL"),
       ),
     );
   }
