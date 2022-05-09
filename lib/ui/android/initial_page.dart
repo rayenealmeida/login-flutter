@@ -12,8 +12,11 @@ class InitialPage extends StatelessWidget {
         SplashScreen(
           seconds: 5,
           gradientBackground: LinearGradient(
-            begin: ,
-            colors: ,
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors:
+              Colors.green[100],
+              Colors.green[600]
             ),
 
         ),
