@@ -17,13 +17,18 @@ class LoginPage extends StatelessWidget {
                 child: CircleAvatar(
                   backgroundColor: Colors.transparent,
                   radius: 48.0,
+                  child: Text( 'Login', 
+                         style: TextStyle(
+                            color: Colors.black, 
+                            fontSize: 45,
+                        )),
                 ),
               ),
               const SizedBox(height: 48.0),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 autofocus: false,
-                initialValue: "emailteste@gmail.com",
+                //initialValue: "emailteste@gmail.com",
                 decoration: InputDecoration(
                   hintText: "E-mail",
                   contentPadding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
@@ -58,7 +63,7 @@ class LoginPage extends StatelessWidget {
                 child: const Text("Acessar", style: TextStyle(color: Colors.white),),
               ),
             ),
-              FlatButton(
+              TextButton(
                 onPressed: () { },
                 child: const Text("Esqueceu a senha?", style: TextStyle(color: Colors.black54),),
             ),
