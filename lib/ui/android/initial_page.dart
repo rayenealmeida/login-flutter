@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:login/routes/app_routes.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class InitialPage extends StatelessWidget {
@@ -14,15 +15,16 @@ class InitialPage extends StatelessWidget {
           gradientBackground: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
-            colors:
-              Colors.green[100],
-              Colors.green[600]
+            colors: [
+              Colors.green[100]!,
+              Colors.green[600]!
+              ],
             ),
-
-        ),
-      ],
-
-    ),
+            navigateAfterSeconds: Routes.LOGIN,
+            loaderColor: Colors.transparent,
+          ),
+        ],
+      ),
     );
   }
 }
