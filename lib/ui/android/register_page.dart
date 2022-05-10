@@ -25,6 +25,22 @@ class RegisterPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 48.0),
+              const Text("CADASTRAR"),
+              const SizedBox(height: 48.0),
+              TextFormField(
+                keyboardType: TextInputType.emailAddress,
+                autofocus: false,
+                //initialValue: "emailteste@gmail.com",
+                decoration: InputDecoration(
+                  hintText: "Nome",
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(32.0), 
+                )
+              ),
+            ),
+
+              const SizedBox(height: 48.0),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 autofocus: false,
@@ -65,6 +81,12 @@ class RegisterPage extends StatelessWidget {
             ),
               TextButton(
                 onPressed: () { },
+                child: const Text("Esqueceu a senha?", style: TextStyle(color: Colors.black54),),
+            ),
+            TextButton(
+                onPressed: () { 
+                  //
+                },
                 child: const Text("Esqueceu a senha?", style: TextStyle(color: Colors.black54),),
             ),
           ],

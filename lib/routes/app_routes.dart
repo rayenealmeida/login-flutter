@@ -1,4 +1,7 @@
+import 'package:login/ui/android/home_page.dart';
+
 abstract class Routes {
-  static const LOGIN = '/login';
-  static const HOME = '/home';
+  static const login = '/login';
+  static const register = '/register';
+  static const home = '/home';
 }
