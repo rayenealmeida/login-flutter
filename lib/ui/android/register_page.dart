@@ -25,8 +25,8 @@ class RegisterPage extends StatelessWidget {
                         )),
                 ),
               ),
-              const SizedBox(height: 48.0),
-              const Text("Cadastrar"),
+              
+              
               const SizedBox(height: 48.0),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
@@ -40,8 +40,7 @@ class RegisterPage extends StatelessWidget {
                 )
               ),
             ),
-
-              const SizedBox(height: 48.0),
+             const SizedBox(height: 8.0),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 autofocus: false,
@@ -74,16 +73,17 @@ class RegisterPage extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(24.0),
                 ),
-                onPressed: () { },
+                onPressed: () { 
+
+                },
                 padding: const EdgeInsets.all(12.0),
                 color: Get.theme.primaryColor,
-                child: const Text("Acessar", style: TextStyle(color: Colors.white),),
+                child: const Text("Cadastrar", style: TextStyle(color: Colors.white),),
               ),
             ),
               TextButton(
                 onPressed: () { 
                   Get.toNamed(Routes.login);
-
                 },
                 child: const Text("Fazer Login", style: TextStyle(color: Colors.black54),),
             ),
