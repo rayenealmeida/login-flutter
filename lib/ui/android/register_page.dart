@@ -26,7 +26,7 @@ class RegisterPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 48.0),
-              const Text("CADASTRAR"),
+              const Text("Cadastrar"),
               const SizedBox(height: 48.0),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
@@ -83,7 +83,7 @@ class RegisterPage extends StatelessWidget {
               TextButton(
                 onPressed: () { 
                   Get.toNamed(Routes.login);
-                  
+
                 },
                 child: const Text("Fazer Login", style: TextStyle(color: Colors.black54),),
             ),
