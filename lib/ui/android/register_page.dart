@@ -33,14 +33,14 @@ class RegisterPage extends StatelessWidget {
                 autofocus: false,
                 //initialValue: "emailteste@gmail.com",
                 decoration: InputDecoration(
-                  hintText: "Nome",
+                  hintText: "Nome completo",
                   contentPadding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(32.0), 
                 )
               ),
             ),
-             const SizedBox(height: 8.0),
+             const SizedBox(height: 21.0),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 autofocus: false,
@@ -53,13 +53,26 @@ class RegisterPage extends StatelessWidget {
                 )
               ),
             ),
-            const SizedBox(height: 8.0),
+            const SizedBox(height: 21.0),
             TextFormField(
                 autofocus: false,
                 //initialValue: "password",
                 obscureText: true,
                 decoration: InputDecoration(
                   hintText: "Senha",
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(32.0),
+                )
+              ),
+            ),
+            const SizedBox(height: 21.0),
+            TextFormField(
+                autofocus: false,
+                //initialValue: "password",
+                obscureText: true,
+                decoration: InputDecoration(
+                  hintText: "Confirmar senha",
                   contentPadding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(32.0),
@@ -85,7 +98,7 @@ class RegisterPage extends StatelessWidget {
                 onPressed: () { 
                   Get.toNamed(Routes.login);
                 },
-                child: const Text("Fazer Login", style: TextStyle(color: Colors.black54),),
+                child: const Text("Voltar para Login", style: TextStyle(color: Colors.black54),),
             ),
           ],
         )
