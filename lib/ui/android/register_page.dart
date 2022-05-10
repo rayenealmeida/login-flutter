@@ -87,7 +87,7 @@ class RegisterPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(24.0),
                 ),
                 onPressed: () { 
-
+                    Get.toNamed(Routes.login);
                 },
                 padding: const EdgeInsets.all(12.0),
                 color: Get.theme.primaryColor,

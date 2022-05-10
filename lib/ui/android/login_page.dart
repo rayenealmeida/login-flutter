@@ -58,7 +58,9 @@ class LoginPage extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(24.0),
                 ),
-                onPressed: () { },
+                onPressed: () { 
+                  Get.toNamed(Routes.home);
+                },
                 padding: const EdgeInsets.all(12.0),
                 color: Get.theme.primaryColor,
                 child: const Text("Acessar", style: TextStyle(color: Colors.white),),
