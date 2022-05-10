@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:login/routes/app_routes.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage ({Key? key}):super(key: key);
@@ -80,14 +81,11 @@ class RegisterPage extends StatelessWidget {
               ),
             ),
               TextButton(
-                onPressed: () { },
-                child: const Text("Esqueceu a senha?", style: TextStyle(color: Colors.black54),),
-            ),
-            TextButton(
                 onPressed: () { 
-                  //
+                  Get.toNamed(Routes.login);
+                  
                 },
-                child: const Text("Esqueceu a senha?", style: TextStyle(color: Colors.black54),),
+                child: const Text("Fazer Login", style: TextStyle(color: Colors.black54),),
             ),
           ],
         )
