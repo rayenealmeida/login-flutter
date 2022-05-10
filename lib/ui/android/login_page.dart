@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:login/routes/app_routes.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage ({Key? key}):super(key: key);
@@ -66,6 +67,12 @@ class LoginPage extends StatelessWidget {
               TextButton(
                 onPressed: () { },
                 child: const Text("Esqueceu a senha?", style: TextStyle(color: Colors.black54),),
+            ),
+            TextButton(
+                onPressed: () { 
+                  Get.toNamed(Routes.register);
+                },
+                child: const Text("Cadastrar-se", style: TextStyle(color: Colors.black54),),
             ),
           ],
         )
